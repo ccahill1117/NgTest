@@ -35,8 +35,11 @@ export class AppComponent {
     }
   }
 
-  editTask() {
-    alert("Time to edit a task!");
+  selectedTask: Task = null;
+
+  editTask(clickedTask) {
+    this.selectedTask = clickedTask;
   }
+
 
 }
