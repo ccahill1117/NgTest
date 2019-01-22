@@ -1,5 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
+  <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
+  <h3>{{currentFocus}}</h3>
+  <ul>
+    <li *ngFor='let currentTask of tasks'>{{currentTask.description}}</li>
+  </ul>
+  <h3>{{currentRecipes}}</h3>
+  <ul>
+    <li *ngFor='let currentRecipe of recipes'>{{currentRecipe.title}}
+    </li>
+    <li *ngFor='let ingredient of ingredients of recipes'>{{ingredient.ingredients}}
+    </li>
+  </ul>
+
+
   <h1>
     Welcome to {{ title }}!
   </h1>
