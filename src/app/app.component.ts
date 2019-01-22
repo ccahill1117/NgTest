@@ -22,7 +22,7 @@ export class AppComponent {
   currentRecipes: string = 'Here are our recipes';
   recipes : Recipe[] = [
     new Recipe('brownies',['sugar','chocolate','milk'],['mix','bake','cut']);
-    new Recipe('pizza',['flour','cheese','pepperoni'],['mix','bake','cut piza into slices']);
+    new Recipe('pizza',['flour','cheese','pepperoni','tomato sauce'],['chop up all the ingredients','let dough rise','cut piza into slices']);
 
   ]
 

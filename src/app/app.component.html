@@ -7,10 +7,13 @@
   </ul>
   <h3>{{currentRecipes}}</h3>
   <ul>
-    <li *ngFor='let currentRecipe of recipes'>{{currentRecipe.title}}
-      <ol>
+    <li *ngFor='let currentRecipe of recipes'>Recipe : {{currentRecipe.title}}
+      <ol> Ingredients:
         <li *ngFor='let ingredient of currentRecipe.ingredients'>{{ingredient}}
         </li>
+      </ol>
+      <ol> Directions:
+        <li *ngFor='let direction of currentRecipe.directions'>{{direction}}</li>
       </ol>
     </li>
   </ul>
