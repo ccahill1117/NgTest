@@ -9,7 +9,7 @@ import { Recipe } from './models/recipe.model'
 })
 
 export class AppComponent {
-  title = 'Ngan and Chris make an angular thing';
+  title = 'getting started w/ angular';
   currentTime = new Date();
   currentFocus: string = 'Angular Homework';
   month: number = this.currentTime.getMonth() + 1;
@@ -40,6 +40,10 @@ export class AppComponent {
 
   editTask(clickedTask) {
     this.selectedTask = clickedTask;
+  }
+
+  finishedEditing() {
+    this.selectedTask = null;
   }
 
 
