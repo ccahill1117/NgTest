@@ -7,6 +7,7 @@ import { Recipe } from './models/recipe.model'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Ngan and Chris make an angular thing';
   currentTime = new Date();
